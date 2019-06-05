@@ -28,15 +28,21 @@ Route::group('api/:version/product', function () {
 
 Route::get('api/:version/category/all', 'api/:version.Category/getAllCategories'); // 分类 主页
 
+// 令牌
 Route::post('api/:version/token/user', 'api/:version.Token/getToken'); // token.js 编写地址章节中使用，一部分：实现token加载并验证
 Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken'); // token.js 编写地址章节中使用，一部分：重构了request方法实现token失效问题
+Route::post('api/:version/token/app', 'api/:version.Token/getAppToken'); // cms登录
 
+// 地址
 Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress'); // 订单页面 点击添加地址
 Route::get('api/:version/address', 'api/:version.Address/getUserAddress'); // 订单页面 从购物车到订单页面时加载地址
 
+// 订单
 Route::post('api/:version/order', 'api/:version.Order/placeOrder'); // 付款按钮 order-model.js doOrder方法
 Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail', [], ['id' => '\d+']); // pay-result页面返回订单页面 order.js onShow()
+Route::get('api/:version/order/paginate', 'api/:version.Order/getSummary'); // cms订单信息
+Route::put('api/:version/order/delivery', 'api/:version.Order/delivery'); // cms发货
 
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder'); // 付款按钮 order-model.js execPay方法
 Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');

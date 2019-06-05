@@ -1,0 +1,28 @@
+[ 2019-05-23T09:31:52+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] www.think.com/api/v1/order/paginate?page=1&size=20 [运行时间：0.525211s][吞吐率：1.90req/s] [内存消耗：3,005.40kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002665s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.003970s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.011918s ]
+
+---------------------------------------------------------------
+[ 2019-05-23T09:31:53+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] www.think.com/api/v1/token/app [运行时间：0.059780s][吞吐率：16.73req/s] [内存消耗：2,579.81kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.002189s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'kenrou'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000544s ]
+
+---------------------------------------------------------------
+[ 2019-05-23T09:31:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] www.think.com/api/v1/order/paginate?page=1&size=20 [运行时间：0.107394s][吞吐率：9.31req/s] [内存消耗：3,005.41kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001413s ]
+
+---------------------------------------------------------------
+[ 2019-05-23T09:32:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] www.think.com/api/v1/order/paginate?page=1&size=20 [运行时间：0.203078s][吞吐率：4.92req/s] [内存消耗：3,005.41kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002311s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.000668s ]
+
+---------------------------------------------------------------
