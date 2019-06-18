@@ -1,5 +1,5 @@
 window.base={
-    g_restUrl:'http://www.think.com/api/v1/',
+    g_restUrl:'https://www.kenrou.cn/api/v1/',
 
     getData:function(params){
         if(!params.type){
