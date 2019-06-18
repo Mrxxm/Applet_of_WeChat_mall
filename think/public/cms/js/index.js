@@ -36,6 +36,7 @@ $(function(){
             if(len>0) {
                 for (var i = 0; i < len; i++) {
                     item = data[i];
+                    // console.log(item);
                     str += '<tr>' +
                         '<td>' + item.order_no + '</td>' +
                         '<td>' + item.snap_name + '</td>' +
@@ -43,6 +44,11 @@ $(function(){
                         '<td>￥' + item.total_price + '</td>' +
                         '<td>' + getOrderStatus(item.status) + '</td>' +
                         '<td>' + item.create_time + '</td>' +
+                        '<td>' + '电话：' + item.snap_address.mobile + ''
+                        + item.snap_address.province + ''
+                        + item.snap_address.city + ''
+                        + item.snap_address.country + ''
+                        + item.snap_address.detail + '</td>' +
                         '<td data-id="' + item.id + '">' + getBtns(item.status) + '</td>' +
                         '</tr>';
                 }

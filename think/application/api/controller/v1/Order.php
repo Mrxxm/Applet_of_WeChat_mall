@@ -99,7 +99,7 @@ class Order extends BaseController
                 'data' => []
             ];
         }
-        $data = $pagingOrders->hidden(['snap_items', 'snap_address'])
+        $data = $pagingOrders->hidden(['snap_items'])
             ->toArray();
         return [
             'current_page' => $pagingOrders->currentPage(),
