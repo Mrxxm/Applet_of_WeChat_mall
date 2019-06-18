@@ -36,7 +36,7 @@ $(function(){
             if(len>0) {
                 for (var i = 0; i < len; i++) {
                     item = data[i];
-                    // console.log(item);
+                    console.log(item);
                     str += '<tr>' +
                         '<td>' + item.order_no + '</td>' +
                         '<td>' + item.snap_name + '</td>' +
