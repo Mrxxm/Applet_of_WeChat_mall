@@ -8,5 +8,5 @@
 
 return [
     'token_salt' => 'HHaafhGAD39ERe3f',
-    'pay_back_url' => 'http://www.think.com/api/v1/pay/notify' // 本地虚拟域名无法访问
+    'pay_back_url' => 'https://www.kenrou.cn/api/v1/pay/notify' // 本地虚拟域名无法访问
 ];

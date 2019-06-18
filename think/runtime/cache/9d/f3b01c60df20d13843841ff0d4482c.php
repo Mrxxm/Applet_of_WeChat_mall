@@ -1,3 +1,0 @@
-<?php
-//000000007000a:2:{s:12:"access_token";s:157:"21_UDiPUyEvXYGYaIWrcGWr80dUrE-8Z-cOcDZ3-RD08tEOsHhS1Ux7t0aWS8XnWml9tIt-OCaRU9PYwQcOLXgnWMvmMde40kNO5-UMcn0qazSA947k5wz66lw7OqVg0SHYBd4_5W-NHK1DalGGLXQiAGAWIB";s:10:"expires_in";i:7200;}
-?>
