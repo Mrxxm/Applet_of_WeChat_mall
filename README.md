@@ -65,3 +65,12 @@ server {
 ```
 
 4.数据库备份文件[数据库](http://blog.kenrou.cn/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB%E6%95%B0%E6%8D%AE%E5%BA%93.sql)
+
+
+![](https://img3.doubanio.com/view/photo/l/public/p2656466940.jpg)
+
+![](https://img9.doubanio.com/view/photo/l/public/p2656466945.jpg)
+
+![](https://img1.doubanio.com/view/photo/l/public/p2656466948.jpg)
+
+![](https://img2.doubanio.com/view/photo/l/public/p2656466951.jpg)
